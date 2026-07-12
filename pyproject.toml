@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "predictive-maintenance-iiot"
+version = "1.0.0"
+description = "End-to-end Predictive Maintenance system for Industrial IoT — real-world failure classification at scale"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Data Science Portfolio", email = "portfolio@example.com"}
+]
+keywords = [
+    "predictive-maintenance",
+    "industrial-iot",
+    "failure-classification",
+    "machine-learning",
+    "deep-learning",
+    "xgboost",
+    "lstm",
+    "streamlit",
+    "mlops",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Manufacturing",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "hypothesis", "black", "ruff", "mypy"]
+dashboard = ["streamlit", "plotly", "altair"]
+api = ["fastapi", "uvicorn", "pydantic"]
+
+[project.scripts]
+pdm-train = "src.models.train:main"
+pdm-dashboard = "src.dashboard.app:main"
+pdm-api = "src.dashboard.api:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = ["-v", "--tb=short", "--strict-markers"]
