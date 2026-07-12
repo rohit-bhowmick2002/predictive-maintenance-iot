@@ -659,6 +659,24 @@ This is a portfolio project. Feedback, issues, and pull requests are welcome.
 
 ---
 
+## 👤 Author
+
+<div align="center">
+
+### Rohit Bhowmick
+
+Data Scientist | ML Engineer
+
+<p>
+  <a href="mailto:rohitbhowmick817@gmail.com"><img src="https://img.shields.io/badge/Email-rohitbhowmick817%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/rohit-bhowmick"><img src="https://img.shields.io/badge/LinkedIn-Rohit%20Bhowmick-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://github.com/rohit-bhowmick2002"><img src="https://img.shields.io/badge/GitHub-rohit--bhowmick2002-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+</p>
+
+</div>
+
+---
+
 ## 📄 License
 
 MIT License — see [`LICENSE`](LICENSE) for details.
@@ -671,9 +689,6 @@ If this project helps you learn, build your portfolio, or make a hiring decision
 
 ---
 
-<p align="center">
-  <i>"In God we trust. All others must bring data."</i> — W. Edwards Deming
-</p>
 
 <p align="center">
   <sub>Built with ❤️ for the industrial data science community | Last updated: July 2026</sub>
